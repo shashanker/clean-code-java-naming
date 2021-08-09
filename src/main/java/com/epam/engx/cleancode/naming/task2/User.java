@@ -5,13 +5,13 @@ import java.util.Date;
 
 public class User {
 
-	protected boolean admin = false;
+	protected boolean isAdmin = false;
 
-	private String dateOfBirth;
+	private final String dateOfBirth;
 
-	private String name;
+	private final String name;
 
-	private User[] subordinates;
+	private final User[] subordinates;
 
 	private int rating;
 
@@ -23,7 +23,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [dateOfBirth=" + dateOfBirth + ", name=" + name + ", isAdmin=" + admin + ", subordinates="
+		return "User [dateOfBirth=" + dateOfBirth + ", name=" + name + ", isAdmin=" + isAdmin + ", subordinates="
 				+ Arrays.toString(subordinates) + ", rating=" + rating + "]";
 	}
 
