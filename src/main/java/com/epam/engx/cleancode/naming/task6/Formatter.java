@@ -14,13 +14,15 @@ public class Formatter {
         String minuses = generateHorizontalBorder(HORIZONTAL_SYMBOL, content.length());
         return EDGE_SYMBOL +  minuses + EDGE_SYMBOL + LINE_SEPARATOR
                 + VERTICAL_SYMBOL + content + VERTICAL_SYMBOL + LINE_SEPARATOR
-                + EDGE_SYMBOL + HORIZONTAL_SYMBOL + EDGE_SYMBOL + LINE_SEPARATOR;
+                + EDGE_SYMBOL + minuses + EDGE_SYMBOL + LINE_SEPARATOR;
     }
 
     private String generateHorizontalBorder(String symbol, int times) {
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < times; i++)
+        for (int i = 0; i < times; i++) {
         	result.append(symbol);
+        }
+        	
         return result.toString();
     }
 }
