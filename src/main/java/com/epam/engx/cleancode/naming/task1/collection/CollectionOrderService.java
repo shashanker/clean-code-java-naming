@@ -11,9 +11,9 @@ public class CollectionOrderService implements OrderService {
 
     private static final int CRITICAL_NOTIFICATION_LEVEL = 1;
 	private static final int INFO_NOTIFICATION_LEVEL = 4;
+	
 	private CollectionService collectionService;
     private NotificationManager notificationManager;
-
 
     @Override
     public void submitOrder(Order order) {
@@ -25,7 +25,6 @@ public class CollectionOrderService implements OrderService {
         }
     }
 
-
 	public void setCollectionService(CollectionService collectionService) {
 		this.collectionService = collectionService;
 	}
@@ -33,6 +32,5 @@ public class CollectionOrderService implements OrderService {
 	public void setNotificationManager(NotificationManager notificationManager) {
 		this.notificationManager = notificationManager;
 	}
-
    
 }

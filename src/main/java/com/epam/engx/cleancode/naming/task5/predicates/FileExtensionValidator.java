@@ -3,11 +3,11 @@ package com.epam.engx.cleancode.naming.task5.predicates;
 
 import com.epam.engx.cleancode.naming.task5.thirdpartyjar.Predicate;
 
-public class FileExtensionPredicate implements Predicate<String> {
+public class FileExtensionValidator implements Predicate<String> {
 
     private final String[] allowedExtensions;
 
-    public FileExtensionPredicate(String[] allowedExtensions) {
+    public FileExtensionValidator(String[] allowedExtensions) {
         this.allowedExtensions = allowedExtensions;
     }
 
